@@ -12,3 +12,4 @@ $department=$_POST['department'];
 
 //echo $department;
 mysqli_query($connnection,"INSERT INTO students (name,mobile,department) values('$name','$mobile','$department')");
+header("Location:index.php");

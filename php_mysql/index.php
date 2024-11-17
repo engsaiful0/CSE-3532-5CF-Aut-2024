@@ -25,6 +25,8 @@
                     <select name="department" id="departmentId">
                         <option>CSE</option>
                         <option>EEE</option>
+                        <option>ME</option>
+                        <option>CE</option>
                     </select>
                 </td>
             </tr>
@@ -37,6 +39,9 @@
         </table>
     </form>
 
+    <?php
+    include("view.php");
+    ?>
 </body>
 
 </html>

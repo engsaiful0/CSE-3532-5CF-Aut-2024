@@ -16,6 +16,8 @@
             <td>Name</td>
             <td>Mobile</td>
             <td>Department</td>
+            <td>Edit</td>
+            <td>Delete</td>
         </tr>
 
     
@@ -24,12 +26,19 @@
     {
        // echo '<pre>';
     //print_r($row);
+    $id=$row['id'];
     ?>
     <tr>
         <td><?php echo $row['id']?></td>
         <td><?php echo $row['name']?></td>
         <td><?php echo $row['mobile']?></td>
         <td><?php echo $row['department']?></td>
+        <td>
+            <a href="edit.php?id=<?php echo  $id?>">Edit</a>
+        </td>
+        <td>
+            <a href="delete.php?id=<?php echo  $id?>">Delete</a>
+        </td>
     </tr>
     <?php
     }
