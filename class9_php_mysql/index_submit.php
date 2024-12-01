@@ -6,19 +6,19 @@
             <tr>
                 <td>Name</td>
                 <td>
-                    <input type="text" name="studentName">
-                </td>
-            </tr>
-            <tr>
-                <td>Roll</td>
-                <td>
-                    <input type="text" name="roll">
+                    <input type="text" name="name" required>
                 </td>
             </tr>
             <tr>
                 <td>Mobile</td>
                 <td>
-                    <input type="text" name="mobile">
+                    <input type="text" name="mobile" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>
+                    <input type="text" name="department" required>
                 </td>
             </tr>
             <tr>
@@ -32,7 +32,7 @@
     </form>
     <?php
 
-   // include 'view.php';
+    include 'view.php';
 
 
     ?>

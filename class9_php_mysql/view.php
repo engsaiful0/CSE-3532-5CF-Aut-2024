@@ -7,8 +7,8 @@ $query = mysqli_query($connection, "SELECT * FROM students");
     <tr>
         <td>ID</td>
         <td>Name</td>
-        <td>Roll</td>
         <td>Mobile</td>
+        <td>Department</td>
         <td>Update</td>
         <td>Delete</td>
     </tr>
@@ -18,9 +18,9 @@ $query = mysqli_query($connection, "SELECT * FROM students");
     ?>
         <tr>
         <td><?php echo $row['id'] ?></td>
-            <td><?php echo $row['studentName'] ?></td>
-            <td><?php echo $row['roll'] ?></td>
+            <td><?php echo $row['name'] ?></td>
             <td><?php echo $row['mobile'] ?></td>
+            <td><?php echo $row['department'] ?></td>
             <td>
                 <a href="update.php?id=<?php echo $id?>">Update</a>
             </td>

@@ -5,12 +5,12 @@ include 'db_connection.php';
 //echo '<pre>';
 //print_r($connection);
 //print_r($_POST);
-$studentName=$_POST['studentName'];
-$roll=$_POST['roll'];
+$name=$_POST['name'];
+$department=$_POST['department'];
 $mobile=$_POST['mobile'];
-mysqli_query($connection,"INSERT INTO students (studentName,roll,mobile) values('$studentName','$roll','$mobile')");
-
-//header("location:index.php"); //Redirect to index.php
+mysqli_query($connection,"INSERT INTO students (name,mobile,department) values('$name','$mobile','$department')");
+echo "Data has been saved successfully";
+//header("location:index_submit.php"); //Redirect to index.php
 
 
 
